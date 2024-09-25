@@ -1,0 +1,14 @@
+<div class="ui celled list">
+  <div class="item" *ngFor="let email of emails">
+    <a [routerLink]="email.id" routerLinkActive="active"
+      ><!-- gives a link relative to the link you are currently at, link builder will look at current route and stick
+       email.id at the end-->
+      <div class="contnet">
+        <div class="header trim">{{ email.subject }}</div>
+        <p class="trim">
+          {{ email.from }}
+        </p>
+      </div>
+    </a>
+  </div>
+</div>
