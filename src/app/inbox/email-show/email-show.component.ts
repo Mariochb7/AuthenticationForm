@@ -4,11 +4,12 @@ import { EmailService } from '../email.service';
 import { switchMap } from 'rxjs';
 import { Email } from '../email';
 import { CommonModule } from '@angular/common';
+import { EmailReplyComponent } from '../email-reply/email-reply.component';
 
 @Component({
   selector: 'app-email-show',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, EmailReplyComponent],
   templateUrl: './email-show.component.html',
   styleUrl: './email-show.component.css',
 })
